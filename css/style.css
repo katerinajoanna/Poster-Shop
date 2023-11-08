@@ -31,7 +31,13 @@ body header {
 body header img {
     position: absolute;
     top: 1rem;
-    left: 1 rem;
+    left: 1rem;
+}
+
+h1 {
+    font-family: 'Roboto, sans-serif';
+    text-align: center;
+    font-size: 5rem;
 }
 
 body main {
@@ -43,8 +49,44 @@ body main {
 }
 
 body main article {
-    grid-column: auto /spam 2;
+    grid-column: auto / span 2;
     color: white;
+}
+
+body main article.large {
+    grid-column: auto / span 3;
+    color: #222;
+    background-color: white;
+}
+
+body main article img {
+    width: 100%;
+
+}
+
+body main article h2 {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+body main article button {
+    appearance: none;
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: .25rem;
+    background-color: #e73f57;
+    color: white;
+    margin-top: 2rem;
+}
+
+body main article.large h2,
+body main article.large p {
+    margin: 1rem;
+}
+
+body main article.large button {
+    margin: 1rem;
+    padding: 1rem 2rem;
 }
 
 body footer {
@@ -62,4 +104,12 @@ body footer section {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     padding: 2rem 0;
+}
+
+body footer section article h2 {
+    margin-bottom: 1rem;
+}
+
+body footer section article p {
+    line-height: 150%;
 }
